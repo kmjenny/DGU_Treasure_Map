@@ -16,20 +16,20 @@ def get_place(request, id):
         place_name = place_id.name
         category_name = i.category.name
 
-        # # facility_set = {
-        # #     "name":i.name,
-        # #     "category":category_name,
-        # #     "id":i.id,
-        # #     "time":,
-        # #     "img":,
-        # #     "phone":,
-        # #     "use":,
-        # #     "where":place_name,
-        # #     "floor":
-        # # }
-        # send_facility.append(facility_set)
+    #     facility_set = {
+    #         "name":i.name,
+    #         "category":category_name,
+    #         "id":i.id,
+    #         "time":,
+    #         "img":,
+    #         "phone":i.phone,
+    #         "use":i.content,
+    #         "where":place_name,
+    #         "floor":i.floor
+    #     }
+    #     send_facility.append(facility_set)
 
-    return Response(data=send_facility)
+    # return Response(data=send_facility)
 
 @api_view(['GET'])
 def get_category(request, id):
